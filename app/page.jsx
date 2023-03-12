@@ -9,16 +9,16 @@ import rails from '../public/rails.png'
 import postgresql from '../public/postgresql.png'
 import javascript from '../public/javascript.png'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <section id='home' className='w-full h-screen text-center'>
-        <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
+        <div className=' w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
             <h1 className='py-4 text-gray-700'>
-              Hi, I'm <span className='text-[#49abcc]'>Andor Lato</span>
+              Hi, I'm <span className=''>Andor Lato</span>
             </h1>
             <h1 className='py-2 text-gray-700'>A Full Stack Web Developer</h1>
             <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
@@ -31,9 +31,9 @@ export default function Home() {
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <a href='#' target='_blank' rel='noopener noreferrer'>
                   <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    stroke-width='0'
+                    stroke=''
+                    fill=''
+                    strokeWidth='0'
                     viewBox='0 0 448 512'
                     height='1em'
                     width='1em'
@@ -44,15 +44,11 @@ export default function Home() {
                 </a>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <a
-                  href='https://github.com/imkeithyeet'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href='' target='_blank' rel='noopener noreferrer'>
                   <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    stroke-width='0'
+                    stroke=''
+                    fill=''
+                    strokeWidth='0'
                     viewBox='0 0 496 512'
                     height='1em'
                     width='1em'
@@ -63,15 +59,11 @@ export default function Home() {
                 </a>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <a
-                  href='mailto:keithchezzy@gmail.com'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href='' target='_blank' rel='noopener noreferrer'>
                   <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    stroke-width='0'
+                    stroke=''
+                    fill=''
+                    strokeWidth='0'
                     viewBox='0 0 1024 1024'
                     height='1em'
                     width='1em'
@@ -84,9 +76,9 @@ export default function Home() {
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                 <a href='#' target='_blank' rel='noopener noreferrer'>
                   <svg
-                    stroke='currentColor'
-                    fill='currentColor'
-                    stroke-width='0'
+                    stroke=''
+                    fill=''
+                    strokeWidth='0'
                     viewBox='0 0 16 16'
                     height='1em'
                     width='1em'
@@ -100,71 +92,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section
-        id='about'
-        class='w-full md:h-screen p-2 flex items-center py-16'
-      >
-        <div class='max-w-[1240px] m-auto md:grid grid-cols-3 gap-8'>
-          <div class='col-span-2'>
-            <p class='uppercase text-xl tracking-widest text-[#4441a3]'>
-              About
-            </p>
-            <h2 class='py-4'>Who I Am</h2>
-            <p class='py-2 text-gray-600'>
-              *Put in the hard work and you will see the results*
-            </p>
-            <p class='py-2 text-gray-600'>
-              Hello! I'm a full stack developer based in Los Angeles,
-              California, with a passion for creating beautiful and functional
-              websites. With a background in design and specialization in
-              front-end development, I bring a unique perspective to every
-              project I work on. I recently graduated from Flatiron BootCamp as
-              a full stack development student, where I honed my skills in
-              programming, database management, and more.
-            </p>
-            <p class='py-2 text-gray-600'>
-              As you explore my portfolio, you'll see examples of my work in
-              front-end development, including projects that showcase my
-              expertise in HTML, CSS, JavaScript, React, and Ruby on Rails. I'm
-              also well-versed in back-end development and have experience with
-              database technologies like MySQL.
-            </p>
-            <p class='py-2 text-gray-600'>
-              {' '}
-              <p class='py-2 text-gray-600'>
-                If you're interested in learning more about my skills and
-                experience, please don't hesitate to contact me with any
-                questions. I'd love to hear from you!
-              </p>
-            </p>
-            <p class='py-2 text-gray-600'>
-              I have developed this website using Next.JS and Tailwind CSS.
-            </p>
-            <a
-              href='https://drive.google.com/file/d/1ZOonWvRlMncezDCuOPjTrrF73YIqZ1Vt/view'
-              target='_blank'
-              rel='noopener noreferrer'
-              class='py-2 text-blue-600 underline hover:bg-blue-100 '
-            >
-              Check out my Resume
-            </a>
-          </div>
-          <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-3 hover:scale-105 ease-in duration-300'></div>
-        </div>
-      </section>
-      <section>
-        <div className='grid grid-cols-1 md:grid-cols-6 my-2'>
-          <Image src={html} alt='html' width={50} height={50} />
-          <Image src={css} alt='css' width={50} height={50} />
-          <Image src={react} alt='react' width={50} height={50} />
-          <Image src={next} alt='next' width={50} height={50} />
-          <Image src={javascript} alt='javascript' width={50} height={50} />
-          <Image src={rails} alt='rails' width={50} height={50} />
-          <Image src={postgresql} alt='postgresql' width={50} height={50} />
-        </div>
-      </section>
-
-      <section></section>
     </main>
   )
 }
