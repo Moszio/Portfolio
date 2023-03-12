@@ -8,9 +8,12 @@ module.exports = {
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx}',
   ],
-  content: [],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        fluid: 'repeat(auto-fit,minmax(15rem, 1fr))',
+      },
+    },
   },
   plugins: [],
 }
