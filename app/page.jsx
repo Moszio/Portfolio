@@ -1,14 +1,3 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
-import html from '../public/html.png'
-import css from '../public/css.png'
-import react from '../public/react.png'
-import next from '../public/nextjs.png'
-import rails from '../public/rails.png'
-import postgresql from '../public/postgresql.png'
-import javascript from '../public/javascript.png'
-
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {

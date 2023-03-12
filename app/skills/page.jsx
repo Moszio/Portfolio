@@ -12,55 +12,63 @@ const skills = () => {
   return (
     <div className='carousel-container'>
       <div className='carousel '>
-        <Image
-          src={html}
-          alt='html'
-          width={50}
-          height={50}
-          className='carousel__face'
-        />
-        <Image
-          src={css}
-          alt='css'
-          width={50}
-          height={50}
-          className='carousel__face'
-        />
-        <Image
-          src={react}
-          alt='react'
-          width={50}
-          height={50}
-          className='carousel__face'
-        />
-        <Image
-          src={next}
-          alt='next'
-          width={50}
-          height={50}
-          className='carousel__face'
-        />
-        <Image
-          src={javascript}
-          alt='javascript'
-          width={50}
-          height={50}
-          className='carousel__face'
-        />
-        <Image
-          src={rails}
-          alt='rails'
-          width={50}
-          height={50}
-          className='carousel__face'
-        />
-        <Image
-          src={postgresql}
-          alt='postgresql'
-          width={50}
-          height={50}
-          className='carousel__face'
-        />
+        <div className='carousel__face '>
+          <Image
+            src={html}
+            alt='html'
+            width={50}
+            height={50}
+            className='logo'
+          />
+        </div>
+        <div className='carousel__face'>
+          <Image src={css} alt='css' width={50} height={50} className='logo' />
+        </div>
+        <div className='carousel__face'>
+          <Image
+            src={react}
+            alt='react'
+            width={50}
+            height={50}
+            className='logo'
+          />
+        </div>
+        <div className='carousel__face'>
+          <Image
+            src={next}
+            alt='next'
+            width={50}
+            height={50}
+            className='logo'
+          />
+        </div>
+        <div className='carousel__face'>
+          <Image
+            src={javascript}
+            alt='javascript'
+            width={50}
+            height={50}
+            className='logo'
+          />
+        </div>
+        <div className='carousel__face'>
+          <Image
+            src={rails}
+            alt='rails'
+            width={50}
+            height={50}
+            className='logo'
+          />
+        </div>
+        <div className='carousel__face'>
+          <Image
+            src={postgresql}
+            alt='postgresql'
+            width={50}
+            height={50}
+            className='logo'
+          />
+        </div>
       </div>
     </div>
   )
