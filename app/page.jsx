@@ -11,10 +11,6 @@ import javascript from '../public/javascript.png'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const myLoader = ({ src, width, quality }) => {
-  return `https://example.com/${src}?w=${width}&q=${quality || 75}`
-}
-
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -86,11 +82,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <a
-                  href='https://medium.com/@keithspexma'
-                  target='_blank'
-                  rel='noopener noreferrer'
-                >
+                <a href='#' target='_blank' rel='noopener noreferrer'>
                   <svg
                     stroke='currentColor'
                     fill='currentColor'
@@ -161,7 +153,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className=''>
+        <div className='grid grid-cols-1 md:grid-cols-6 my-2'>
           <Image src={html} alt='html' width={50} height={50} />
           <Image src={css} alt='css' width={50} height={50} />
           <Image src={react} alt='react' width={50} height={50} />
@@ -171,6 +163,8 @@ export default function Home() {
           <Image src={postgresql} alt='postgresql' width={50} height={50} />
         </div>
       </section>
+
+      <section></section>
     </main>
   )
 }
