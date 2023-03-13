@@ -20,7 +20,11 @@ export default function Home() {
             </p>
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <a href='#' target='_blank' rel='noopener noreferrer'>
+                <a
+                  href='https://www.linkedin.com/in/andor-lato/'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <svg
                     stroke=''
                     fill=''
@@ -35,7 +39,11 @@ export default function Home() {
                 </a>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <a href='' target='_blank' rel='noopener noreferrer'>
+                <a
+                  href='https://github.com/Moszio'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <svg
                     stroke=''
                     fill=''
@@ -50,7 +58,7 @@ export default function Home() {
                 </a>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <a href='' target='_blank' rel='noopener noreferrer'>
+                <a href='/contact' target='_blank' rel='noopener noreferrer'>
                   <svg
                     stroke=''
                     fill=''

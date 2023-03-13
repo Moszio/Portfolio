@@ -21,7 +21,7 @@ const Card = ({ project }) => {
               <a href={project.githubLink}>
                 <img
                   alt='githubLogo'
-                  src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
+                  src='https://cdn-icons-png.flaticon.com/512/25/25231.png'
                   className='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1 cursor-pointer hover:scale-110 ease-in duration-300'
                 />
               </a>

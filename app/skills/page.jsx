@@ -7,68 +7,65 @@ import next from '../../public/nextjs.png'
 import rails from '../../public/rails.png'
 import postgresql from '../../public/postgresql.png'
 import javascript from '../../public/javascript.png'
+import bootstrap from '../../public/bootstrap.png'
+import tailwind from '../../public/tailwind.png'
 
 const skills = () => {
+  const logos = [
+    {
+      name: 'CSS',
+      image: css,
+    },
+    {
+      name: 'HTML',
+      image: html,
+    },
+    {
+      name: 'React',
+      image: react,
+    },
+    {
+      name: 'Next.js',
+      image: next,
+    },
+    {
+      name: 'Ruby on Rails',
+      image: rails,
+    },
+    {
+      name: 'PostgreSQL',
+      image: postgresql,
+    },
+    {
+      name: 'JavaScript',
+      image: javascript,
+    },
+    {
+      name: 'Tailwind',
+      image: tailwind,
+    },
+    {
+      name: 'Bootstrap',
+      image: bootstrap,
+    },
+  ]
+
   return (
-    <section className="mt-[100px]">
-      <div className=' justify-center grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-center'>
-        <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300"'>
-          <Image
-            src={html}
-            alt='html'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className=''>
-          <Image src={css} alt='css' width={50} height={50} className='logo' />
-        </div>
-        <div className=''>
-          <Image
-            src={react}
-            alt='react'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className=''>
-          <Image
-            src={next}
-            alt='next'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className=''>
-          <Image
-            src={javascript}
-            alt='javascript'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className=''>
-          <Image
-            src={rails}
-            alt='rails'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className=''>
-          <Image
-            src={postgresql}
-            alt='postgresql'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
+    <section className='h-screen flex justify-center items-center'>
+      <div className='w-full px-12 justify-center grid md:grid-cols-3 lg:grid-cols-3 gap-8 items-center row-start-1 row-span-1 col-start-1 '>
+        {logos.map((logo, index) => {
+          return (
+            <div
+              className='flex justify-evenly gap-4 py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+              key={index}
+            >
+              <Image src={logo.image} alt='html' width={50} height={50} />
+              <div className='flex items-center justify-center'>
+                {logo.name}
+              </div>
+            </div>
+          )
+        })}
       </div>
     </section>
   )
