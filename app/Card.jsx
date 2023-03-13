@@ -7,12 +7,12 @@ const Card = ({ project }) => {
   return (
     <>
       <div className='flex flex-wrap items-center justify-center'>
-        <div className='container max-w-[344px] bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
+        <div className='container bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
           <div className='h-2/4 overflow-hidden'>
             <Image
-              className='w-full rounded-t max-h-[155px]'
+              className='object-cover h-36 w-72 rounded-t '
               src={project.image}
-              height={130}
+              // height={130}
               alt={project.name}
             />
           </div>
@@ -20,7 +20,7 @@ const Card = ({ project }) => {
             <span clspanss='block relative h-11 w-22'>
               <a href={project.githubLink}>
                 <img
-                  alt='githubLogo"'
+                  alt='githubLogo'
                   src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
                   className='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1 cursor-pointer hover:scale-110 ease-in duration-300'
                 />
@@ -34,7 +34,7 @@ const Card = ({ project }) => {
               </h2>
 
               <div
-                className='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-gray-300 hover:bg-blue-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200'
+                className='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-white hover:bg-blue-800 hover:text-gray-100 dark:hover:bg-gray-600 dark:hover:text-gray-200'
                 onClick={() => setShowModal(true)}
               >
                 Preview
@@ -42,10 +42,10 @@ const Card = ({ project }) => {
               <div className='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
                 {project.technologies.map((technology) => {
                   return (
-                    <button className='text-green-900 hover:text-green-700 p-1 sm:p-2 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300 hover:scale-110 ease-in duration-300'>
+                    <button className='text-green-900 hover:text-green-700 p-1 sm:p-1 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300 hover:scale-110 ease-in duration-300 grayscale hover:grayscale-0'>
                       <img
                         src={technology}
-                        className='w-7 h-7 fill-current'
+                        className='w-5 h-5 fill-current'
                         alt='react-logo'
                       />
                     </button>
@@ -64,10 +64,19 @@ const Card = ({ project }) => {
               <div className='border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none'>
                 {/*body*/}
                 <div className='relative p-1 flex-auto'>
-                  <video className='h-80' controls>
-                    <source src={project.video} type='video/mp4' />
-                    Your browser does not support the video tag.
-                  </video>
+                  {project.video ? (
+                    <video className='h-80' controls>
+                      <source src={project.video} type='video/mp4' />
+                      Your browser does not support the video tag.
+                    </video>
+                  ) : (
+                    <Image
+                      className='object-cover h-55 w-110 rounded-t '
+                      src={project.image}
+                      // height={130}
+                      alt={project.name}
+                    />
+                  )}
                 </div>
                 {/*footer*/}
                 <div className='flex items-center justify-end p-2 border-t border-solid border-slate-200 rounded-b'>

@@ -4,10 +4,10 @@ import profilePic from '../../public/profilePic.jpg'
 
 const about = () => {
   return (
-    <section className='mt-[120px]'>
-      <figure className='md:flex rounded-xl p-10  '>
+    <section className='mt-[60px]'>
+      <figure className='md:flex rounded-xl p-4  '>
         <Image
-          className='md:w-128 md:h-auto md:rounded mx-auto drop-shadow-xl overflow:none'
+          className='md:w-88 md:h-auto md:rounded mx-auto drop-shadow-xl overflow:none'
           src={profilePic}
           alt='avatar'
           width='384'

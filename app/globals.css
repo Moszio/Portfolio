@@ -83,7 +83,7 @@
   margin: 0;
 }
 
-/* body {
+body {
   overflow-x: hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -92,10 +92,4 @@
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-} */
-
-.bg-image {
-  background-image: url('../public/projects/TravelTracker.png');
-  background-size: cover;
-  background-position: center;
 }

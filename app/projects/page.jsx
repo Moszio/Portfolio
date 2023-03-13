@@ -4,6 +4,7 @@ import React from 'react'
 import Image from 'next/image'
 import TT from '../../public/projects/TravelTracker.png'
 import WTE from '../../public/projects/WhereToEat.png'
+import FFS from '../../public/projects/Ship.jpg'
 import { useState } from 'react'
 import Card from '../Card'
 
@@ -25,29 +26,23 @@ const projects = () => {
       image: WTE,
     },
     {
-      name: 'Travel Tracker',
-      technologies: ['/javascript.png', '/css.png', '/html.png'],
+      name: 'FFS Logistics',
+      technologies: ['/javascript.png', '/react.png', '/css.png', '/html.png'],
       video: '/projects/FFS Logistics - Google Chrome - 16 October 2022.mp4',
-      githubLink: 'https://github.com/Moszio/Project-Mapp-Website',
-      image: TT,
+      githubLink: 'https://github.com/Moszio/FFS-Logistics',
+      image: FFS,
     },
     {
-      name: 'WhereTo',
-      technologies: [
-        '/javascript.png',
-        '/react.png',
-        '/rails.png',
-        '/css.png',
-        '/html.png',
-      ],
-      video: '/projects/WhereToEat',
-      githubLink: 'https://github.com/Moszio/Meal-Randomizer-App',
+      name: 'Travel Tracker',
+      technologies: ['/javascript.png', '/css.png', '/html.png'],
+      video: '',
+      githubLink: 'https://github.com/Moszio/Project-Mapp-Website',
       image: TT,
     },
   ]
 
   return (
-    <section className='pt-[100px] h-full flex flex-wrap justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500'>
+    <section className='pt-[100px]  md:h-screen flex flex-wrap justify-center items-center '>
       {projects.map((project, index) => {
         return (
           <Card
