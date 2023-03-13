@@ -10,67 +10,75 @@ import javascript from '../../public/javascript.png'
 
 const skills = () => {
   return (
-    <div className='carousel-container'>
-      <div className='carousel '>
-        <div className='carousel__face '>
-          <Image
-            src={html}
-            alt='html'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className='carousel__face'>
-          <Image src={css} alt='css' width={50} height={50} className='logo' />
-        </div>
-        <div className='carousel__face'>
-          <Image
-            src={react}
-            alt='react'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className='carousel__face'>
-          <Image
-            src={next}
-            alt='next'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className='carousel__face'>
-          <Image
-            src={javascript}
-            alt='javascript'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className='carousel__face'>
-          <Image
-            src={rails}
-            alt='rails'
-            width={50}
-            height={50}
-            className='logo'
-          />
-        </div>
-        <div className='carousel__face'>
-          <Image
-            src={postgresql}
-            alt='postgresql'
-            width={50}
-            height={50}
-            className='logo'
-          />
+    <section>
+      <div className=''>
+        <div className=' '>
+          <div className=''>
+            <Image
+              src={html}
+              alt='html'
+              width={50}
+              height={50}
+              className='logo'
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={css}
+              alt='css'
+              width={50}
+              height={50}
+              className='logo'
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={react}
+              alt='react'
+              width={50}
+              height={50}
+              className='logo'
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={next}
+              alt='next'
+              width={50}
+              height={50}
+              className='logo'
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={javascript}
+              alt='javascript'
+              width={50}
+              height={50}
+              className='logo'
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={rails}
+              alt='rails'
+              width={50}
+              height={50}
+              className='logo'
+            />
+          </div>
+          <div className=''>
+            <Image
+              src={postgresql}
+              alt='postgresql'
+              width={50}
+              height={50}
+              className='logo'
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
