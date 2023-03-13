@@ -83,7 +83,7 @@
   margin: 0;
 }
 
-body {
+section {
   overflow-x: hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

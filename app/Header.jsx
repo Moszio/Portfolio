@@ -7,8 +7,8 @@ import { useState } from 'react'
 const Header = () => {
   const [navbar, setNavbar] = useState(false)
   return (
-    <div>
-      <nav className='w-full bg-gray-800 shadow fixed'>
+    <div className='z-10'>
+      <nav className='w-full bg-gray-800 shadow fixed z-20'>
         <div className='justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>
           <div>
             <div className='flex items-center justify-between py-3 md:py-5 md:block'>

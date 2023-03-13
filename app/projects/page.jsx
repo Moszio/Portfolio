@@ -42,7 +42,7 @@ const projects = () => {
   ]
 
   return (
-    <section className='pt-[100px]  md:h-screen flex flex-wrap justify-center items-center '>
+    <section className='pt-[100px] md:h-screen flex flex-wrap justify-center items-center gap-8'>
       {projects.map((project, index) => {
         return (
           <Card
