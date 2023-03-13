@@ -95,7 +95,7 @@
 } */
 
 .bg-image {
-  background-image: url('https://i.pinimg.com/originals/44/96/58/449658c9cb24e0688af686a341595a64.jpg');
+  background-image: url('../public/projects/TravelTracker.png');
   background-size: cover;
   background-position: center;
 }

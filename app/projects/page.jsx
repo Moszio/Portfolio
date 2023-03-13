@@ -5,34 +5,38 @@ import WTE from '../../public/projects/WhereToEat.png'
 
 const projects = () => {
   return (
-    <section class='pt-[100px] flex flex-wrap justify-center items-center'>
-      <div class='flex flex-wrap items-center justify-center'>
-        <div class='container max-w-[344px] bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
-          <div class='h-2/4 overflow-hidden'>
-            <Image class='w-full rounded-t' src={TT} />
+    <section className='pt-[100px] h-full flex flex-wrap justify-center items-center bg-gradient-to-r from-cyan-500 to-blue-500'>
+      <div className='flex flex-wrap items-center justify-center'>
+        <div className='container max-w-[344px] bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
+          <div className='h-2/4 overflow-hidden'>
+            <Image
+              className='w-full rounded-t max-h-[155px]'
+              src={TT}
+              height={130}
+            />
           </div>
-          <div class='flex justify-start px-5 -mt-6 mb-5'>
+          <div className='flex justify-start px-5 -mt-6 mb-5'>
             <span clspanss='block relative h-11 w-22'>
               <img
                 alt='Photo by aldi sigun on Unsplash'
                 src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
-                class='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1'
+                className='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1'
               />
             </span>
           </div>
-          <div class=''>
-            <div class='px-6 mb-1'>
-              <h2 class='text-2xl font-bold text-blue-500 dark:text-gray-300'>
+          <div className=''>
+            <div className='px-6 mb-1'>
+              <h2 className='text-2xl font-bold text-blue-500 dark:text-gray-300'>
                 Travel Tracker
               </h2>
 
-              <div class='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-gray-300 hover:bg-green-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200'>
+              <div className='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-gray-300 hover:bg-green-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200'>
                 Preview
               </div>
-              <div class='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
-                <button class='text-green-900 hover:text-green-700 p-1 sm:p-2 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300'>
+              <div className='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
+                <button className='text-green-900 hover:text-green-700 p-1 sm:p-2 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300'>
                   <svg
-                    class='w-7 h-7 fill-current'
+                    className='w-7 h-7 fill-current'
                     role='img'
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -45,33 +49,33 @@ const projects = () => {
           </div>
         </div>
       </div>
-      <div class='flex flex-wrap items-center justify-center'>
-        <div class='container max-w-[344px] bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
-          <div class='h-2/4 overflow-hidden'>
-            <Image class='w-full rounded-t' src={WTE} />
+      <div className='flex flex-wrap items-center justify-center'>
+        <div className='container max-w-[344px] bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
+          <div className='h-2/4 overflow-hidden'>
+            <Image className='w-full rounded-t max-h-[155px]' src={WTE} />
           </div>
-          <div class='flex justify-start px-5 -mt-6 mb-5'>
+          <div className='flex justify-start px-5 -mt-6 mb-5'>
             <span clspanss='block relative h-11 w-22'>
               <img
                 alt='Photo by aldi sigun on Unsplash'
                 src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
-                class='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1'
+                className='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1'
               />
             </span>
           </div>
-          <div class=''>
-            <div class='px-6 mb-1'>
-              <h2 class='text-2xl font-bold text-blue-500 dark:text-gray-300'>
+          <div className=''>
+            <div className='px-6 mb-1'>
+              <h2 className='text-2xl font-bold text-blue-500 dark:text-gray-300'>
                 Travel Tracker
               </h2>
 
-              <div class='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-gray-300 hover:bg-green-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200'>
+              <div className='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-gray-300 hover:bg-green-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200'>
                 Preview
               </div>
-              <div class='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
-                <button class='text-green-900 hover:text-green-700 p-1 sm:p-2 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300'>
+              <div className='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
+                <button className='text-green-900 hover:text-green-700 p-1 sm:p-2 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300'>
                   <svg
-                    class='w-7 h-7 fill-current'
+                    className='w-7 h-7 fill-current'
                     role='img'
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
@@ -84,33 +88,33 @@ const projects = () => {
           </div>
         </div>
       </div>
-      <div class='flex flex-wrap items-center justify-center'>
-        <div class='container max-w-[344px] bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
-          <div class='h-2/4 overflow-hidden'>
-            <Image class='w-full rounded-t' src={TT} />
+      <div className='flex flex-wrap items-center justify-center'>
+        <div className='container max-w-[344px] bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
+          <div className='h-2/4 overflow-hidden'>
+            <Image className='w-full rounded-t max-h-[155px]' src={TT} />
           </div>
-          <div class='flex justify-start px-5 -mt-6 mb-5'>
+          <div className='flex justify-start px-5 -mt-6 mb-5'>
             <span clspanss='block relative h-11 w-22'>
               <img
                 alt='Photo by aldi sigun on Unsplash'
                 src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
-                class='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1'
+                className='mx-auto object-cover rounded-full h-12 w-12 bg-white p-1'
               />
             </span>
           </div>
-          <div class=''>
-            <div class='px-6 mb-1'>
-              <h2 class='text-2xl font-bold text-blue-500 dark:text-gray-300'>
+          <div className=''>
+            <div className='px-6 mb-1'>
+              <h2 className='text-2xl font-bold text-blue-500 dark:text-gray-300'>
                 Travel Tracker
               </h2>
 
-              <div class='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-gray-300 hover:bg-green-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200'>
+              <div className='justify-center px-4 py-2 cursor-pointer bg-blue-500 max-w-min mx-auto mt-4 rounded-lg text-gray-300 hover:bg-green-800 hover:text-gray-100 dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600 dark:hover:text-gray-200'>
                 Preview
               </div>
-              <div class='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
-                <button class='text-green-900 hover:text-green-700 p-1 sm:p-2 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300'>
+              <div className='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
+                <button className='text-green-900 hover:text-green-700 p-1 sm:p-2 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300'>
                   <svg
-                    class='w-7 h-7 fill-current'
+                    className='w-7 h-7 fill-current'
                     role='img'
                     xmlns='http://www.w3.org/2000/svg'
                     viewBox='0 0 24 24'
