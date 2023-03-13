@@ -1,6 +1,30 @@
-import React from 'react'
+'use client'
+
+import React, { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 
 const contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'YOUR_SERVICE_ID',
+        'YOUR_TEMPLATE_ID',
+        form.current,
+        'YOUR_PUBLIC_KEY'
+      )
+      .then(
+        (result) => {
+          console.log(result.text)
+        },
+        (error) => {
+          console.log(error.text)
+        }
+      )
+  }
   return (
     <section className='px-6 mx-auto h-screen flex justify-center items-center'>
       <div className='text-gray-800'>
@@ -13,15 +37,16 @@ const contact = () => {
               dolorem nisi corrupti eveniet dolores ad maiores repellendus enim
               autem omnis fugiat perspiciatis? Ad, veritatis.
             </p>
-            <p className='text-gray-500 mb-2'>New York, 94126, United States</p>
-            <p className='text-gray-500 mb-2'>+ 01 234 567 89</p>
-            <p className='text-gray-500 mb-2'>info@gmail.com</p>
+            <p className='text-gray-500 mb-2'>New York, United States</p>
+            <p className='text-gray-500 mb-2'>202-706-2003</p>
+            <p className='text-gray-500 mb-2'>latandor@gmail.com</p>
           </div>
           <div className='grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6'>
             <form>
               <div className='form-group mb-6'>
                 <input
                   type='text'
+                  name='user_name'
                   className='form-control block
               w-full
               px-3
@@ -43,6 +68,7 @@ const contact = () => {
               <div class='form-group mb-6'>
                 <input
                   type='email'
+                  name='user_email'
                   className='form-control block
               w-full
               px-3
@@ -63,6 +89,7 @@ const contact = () => {
               </div>
               <div class='form-group mb-6'>
                 <textarea
+                  name='message'
                   className='
               form-control
               block
@@ -88,6 +115,7 @@ const contact = () => {
 
               <button
                 type='submit'
+                value='Send'
                 className='
             w-full
             px-6

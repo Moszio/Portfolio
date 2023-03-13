@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import Image from 'next/image'
 import { useState } from 'react'
@@ -8,7 +6,7 @@ const Card = ({ project }) => {
   const [showModal, setShowModal] = useState(false)
   return (
     <>
-      <div className='flex flex-wrap items-center justify-center '>
+      <div className='flex flex-wrap items-center justify-center'>
         <div className='container bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
           <div className='h-2/4 overflow-hidden'>
             <Image
