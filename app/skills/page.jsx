@@ -51,8 +51,8 @@ const skills = () => {
   ]
 
   return (
-    <section className='h-screen flex flex-col justify-center items-center pt-[150px]'>
-      <div className='text-gray-700 text-6xl font-bold text-start'>
+    <section className='h-screen flex flex-col justify-center items-center pt-[80px] md:pt-[100px]'>
+      <div className='text-gray-700 text-4xl md:text-5xl font-medium md:self-start md:ml-12 align'>
         What I can do
       </div>
       <div className='w-full p-12 grid md:grid-cols-3 lg:grid-cols-3 md:gap-8 adjust'>

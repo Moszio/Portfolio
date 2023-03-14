@@ -6,7 +6,7 @@ export default function Home() {
       <section id='home' className='w-full h-screen text-center'>
         <div className=' w-full h-full mx-auto p-2 flex justify-center items-center'>
           <div>
-            <h1 className='py-4 text-gray-700 text-6xl font-bold'>
+            <h1 className='py-4 text-gray-700 text-4xl md:text-6xl font-bold'>
               Hi, I'm <span className='text-blue-500'>Andor Lato</span>
             </h1>
             <h1 className='py-4 text-gray-700'>A Full Stack Web Developer</h1>
@@ -70,7 +70,11 @@ export default function Home() {
                 </a>
               </div>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <a href='#' target='_blank' rel='noopener noreferrer'>
+                <a
+                  href='https://docs.google.com/document/d/1iA7OuETwSOSlJXAvJWkGIei61ugP0KWS_y5fO3j9pxM/edit?usp=sharing'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
                   <svg
                     stroke=''
                     fill=''

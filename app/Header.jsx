@@ -16,6 +16,18 @@ const Header = () => {
                 <h2 className='text-2xl text-white font-bold'>Andor</h2>
               </a>
 
+              <div className='relative'>
+                <div className='absolute -inset-1 bg-blue-600 rounded-lg blur md:hidden'></div>
+                <a href='https://docs.google.com/document/d/1iA7OuETwSOSlJXAvJWkGIei61ugP0KWS_y5fO3j9pxM/edit?usp=sharing'>
+                  <button
+                    type='button'
+                    className=' relative text-white bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 md:hidden'
+                  >
+                    Resume
+                  </button>
+                </a>
+              </div>
+
               <div className='md:hidden'>
                 <button
                   className='p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border'
@@ -79,12 +91,17 @@ const Header = () => {
               </ul>
             </div>
           </div>
-          {/* <button
-            type='button'
-            class='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 '
-          >
-            Get started
-          </button> */}
+          <div className='relative'>
+            <div className='absolute -inset-1.5 bg-blue-600 rounded-lg blur-md hidden md:flex'></div>
+            <a href='https://docs.google.com/document/d/1iA7OuETwSOSlJXAvJWkGIei61ugP0KWS_y5fO3j9pxM/edit?usp=sharing'>
+              <button
+                type='button'
+                className=' relative text-white bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 hidden md:flex'
+              >
+                Resume
+              </button>
+            </a>
+          </div>
         </div>
       </nav>
     </div>
