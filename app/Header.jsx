@@ -74,19 +74,29 @@ const Header = () => {
             >
               <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 '>
                 <li className='text-white'>
-                  <Link href='/'>Home</Link>
+                  <Link href='/' onClick={() => setNavbar(false)}>
+                    Home
+                  </Link>
                 </li>
                 <li className='text-white'>
-                  <Link href='/about'>About</Link>
+                  <Link href='/about' onClick={() => setNavbar(false)}>
+                    About
+                  </Link>
                 </li>
                 <li className='text-white'>
-                  <Link href='/skills'>Skills</Link>
+                  <Link href='/skills' onClick={() => setNavbar(false)}>
+                    Skills
+                  </Link>
                 </li>
                 <li className='text-white'>
-                  <Link href='/projects'>Projects</Link>
+                  <Link href='/projects' onClick={() => setNavbar(false)}>
+                    Projects
+                  </Link>
                 </li>
                 <li className='text-white'>
-                  <Link href='/contact'>Contact</Link>
+                  <Link href='/contact' onClick={() => setNavbar(false)}>
+                    Contact
+                  </Link>
                 </li>
               </ul>
             </div>

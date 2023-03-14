@@ -91,6 +91,7 @@ const contact = () => {
                 <input
                   type='text'
                   name='user_name'
+                  required
                   className='form-control block
               w-full
               px-3
@@ -113,6 +114,7 @@ const contact = () => {
                 <input
                   type='email'
                   name='user_email'
+                  required
                   className='form-control block
               w-full
               px-3
@@ -155,6 +157,7 @@ const contact = () => {
                   id='exampleFormControlTextarea13'
                   rows='3'
                   placeholder='Message'
+                  required
                 ></textarea>
               </div>
 
