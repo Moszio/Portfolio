@@ -3,34 +3,31 @@
 import React, { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
+const api = process.env.YOUR_SERVICE_ID
+const api2 = process.env.YOUR_TEMPLATE_ID
+const api3 = process.env.YOUR_PUBLIC_KEY
+
 const contact = () => {
   const form = useRef()
 
   const sendEmail = (e) => {
     e.preventDefault()
 
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
-        form.current,
-        'YOUR_PUBLIC_KEY'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+    emailjs.sendForm(api, api2, form.current, api3).then(
+      (result) => {
+        console.log(result.text)
+      },
+      (error) => {
+        console.log(error.text)
+      }
+    )
   }
   return (
     <section className='px-6 mx-auto h-screen flex justify-center items-center'>
       <div className='text-gray-800'>
         <div className='flex flex-wrap'>
           <div className='grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6'>
-            <h2 className='text-3xl font-bold mb-6'>Contact us</h2>
+            <h2 className='text-3xl font-bold mb-6'>Contact with me</h2>
             <p className='text-gray-500 mb-6'>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Laudantium, modi accusantium ipsum corporis quia asperiores
@@ -42,7 +39,7 @@ const contact = () => {
             <p className='text-gray-500 mb-2'>latandor@gmail.com</p>
           </div>
           <div className='grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6'>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className='form-group mb-6'>
                 <input
                   type='text'

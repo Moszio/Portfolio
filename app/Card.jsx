@@ -6,13 +6,12 @@ const Card = ({ project }) => {
   const [showModal, setShowModal] = useState(false)
   return (
     <>
-      <div className='flex flex-wrap items-center justify-center'>
-        <div className='container bg-white rounded dark:bg-gray-800 shadow-lg transform duration-200 easy-in-out m-1'>
+      <div className='flex flex-wrap items-center justify-center '>
+        <div className='container bg-white rounded dark:bg-gray-800 shadow-xl shadow-gray-400 transform duration-200 easy-in-out m-1'>
           <div className='h-2/4 overflow-hidden'>
             <Image
-              className='object-cover h-36 w-72 rounded-t '
+              className='object-cover h-40 w-80 rounded-t '
               src={project.image}
-              // height={130}
               alt={project.name}
             />
           </div>

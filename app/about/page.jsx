@@ -13,7 +13,7 @@ const about = () => {
         />
       </div>
       <div className='pt-6 md:p-12 text-center md:text-left  '>
-        <p className='text-gray-600'>
+        <p className='text-gray-600 bg-slate-100 rounded-xl p-8 shadow-xl shadow-gray-400'>
           Hello! I'm a full stack developer based in New York, NY, with the
           ability to contribute to JavaScript and working with Ruby on Rails as
           an API. On the side I like sharing my increasing knowledge as Software
@@ -24,7 +24,7 @@ const about = () => {
           and growth. Managing multiple departments and large teams helped me to
           be more organized and detail oriented, meet deadlines and improve on
           operation efficiency. The rest of the time I enjoy being a husband,
-          cook, traveler and marvel enthusiast.
+          cook and traveler.
         </p>
       </div>
       {/* 

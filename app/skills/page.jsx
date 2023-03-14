@@ -51,16 +51,19 @@ const skills = () => {
   ]
 
   return (
-    <section className='h-screen flex justify-center items-center'>
-      <div className='w-full px-12 justify-center grid md:grid-cols-3 lg:grid-cols-3 gap-8 items-center row-start-1 row-span-1 col-start-1 '>
+    <section className='h-screen flex flex-col justify-center items-center pt-[150px]'>
+      <div className='text-gray-700 text-6xl font-bold text-start'>
+        What I can do
+      </div>
+      <div className='w-full p-12 grid md:grid-cols-3 lg:grid-cols-3 md:gap-8 adjust'>
         {logos.map((logo, index) => {
           return (
             <div
-              className='flex justify-evenly gap-4 py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
+              className='w-full flex justify-evenly gap-4 py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'
               key={index}
             >
               <Image src={logo.image} alt='html' width={50} height={50} />
-              <div className='flex items-center justify-center'>
+              <div className='flex items-center justify-center hide'>
                 {logo.name}
               </div>
             </div>
