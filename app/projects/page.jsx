@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import Image from 'next/image'
 import TT from '../../public/projects/TravelTracker.png'
 import WTE from '../../public/projects/WhereToEat.png'
 import FFS from '../../public/projects/Ship.jpg'
@@ -13,6 +12,7 @@ const projects = () => {
 
   let projects = [
     {
+      id: 1,
       name: 'WhereToEat',
       technologies: [
         '/javascript.png',
@@ -26,6 +26,7 @@ const projects = () => {
       image: WTE,
     },
     {
+      id: 2,
       name: 'FFS Logistics',
       technologies: ['/javascript.png', '/react.png', '/css.png', '/html.png'],
       video: '/projects/FFS Logistics - Google Chrome - 16 October 2022.mp4',
@@ -33,6 +34,7 @@ const projects = () => {
       image: FFS,
     },
     {
+      id: 3,
       name: 'Travel Tracker',
       technologies: ['/javascript.png', '/css.png', '/html.png'],
       video: '',
@@ -43,11 +45,11 @@ const projects = () => {
 
   return (
     <section className='py-[100px] md:h-screen flex flex-wrap justify-center items-center gap-10'>
-      {projects.map((project, index) => {
+      {projects.map((project) => {
         return (
           <Card
+            key={project.id}
             project={project}
-            key={index}
             setShowModal={setShowModal}
             showModal={setShowModal}
           />

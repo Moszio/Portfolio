@@ -13,6 +13,7 @@ const Card = ({ project }) => {
               className='object-cover h-40 w-80 rounded-t '
               src={project.image}
               alt={project.name}
+              priority={true}
             />
           </div>
           <div className='flex justify-start px-5 -mt-6 mb-5'>
@@ -39,9 +40,12 @@ const Card = ({ project }) => {
                 Preview
               </div>
               <div className='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
-                {project.technologies.map((technology) => {
+                {project.technologies.map((technology, index) => {
                   return (
-                    <button className='text-green-900 hover:text-green-700 p-1 sm:p-1 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300 hover:scale-110 ease-in duration-300 grayscale hover:grayscale-0'>
+                    <button
+                      className='text-green-900 hover:text-green-700 p-1 sm:p-1 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300 hover:scale-110 ease-in duration-300 grayscale hover:grayscale-0'
+                      key={index}
+                    >
                       <img
                         src={technology}
                         className='w-5 h-5 fill-current'
@@ -72,7 +76,6 @@ const Card = ({ project }) => {
                     <Image
                       className='object-cover h-55 w-110 rounded-t '
                       src={project.image}
-                      // height={130}
                       alt={project.name}
                     />
                   )}

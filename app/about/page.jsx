@@ -5,15 +5,19 @@ import profilePic from '../../public/profilePic.jpg'
 const about = () => {
   return (
     <section className='h-screen md:flex justify-center items-center py-[80px]'>
-      <div className='md:flex rounded-xl p-8 md:p-0 md:my-2'>
+      <div className=' md:flex rounded-xl p-8 md:p-0 md:my-2'>
         <Image
-          className=' md:rounded-r-full  mx-auto shadow-xl shadow-gray-400'
+          className=' rounded-md md:rounded-r-full  mx-auto shadow-xl shadow-gray-400 m-w-12 m-h-12 w-8/12 md:w-full'
           src={profilePic}
           alt='avatar'
+          priority={true}
         />
       </div>
-      <div className='pt-6 md:p-12 text-center md:text-left  '>
-        <p className='text-gray-600 bg-slate-100 rounded-xl p-8 shadow-xl shadow-gray-400'>
+      <div className='mx-2 md:mx-0 md:p-6 text-center md:text-left  '>
+        <h1 className='text-gray-700 text-3xl md:text-5xl font-medium md:self-start md:ml-12 align '>
+          About Me
+        </h1>
+        <p className='text-gray-600 bg-slate-100 rounded-xl p-4 mt-4 shadow-xl shadow-gray-400'>
           Hello! I'm a full stack developer based in New York, NY, with the
           ability to contribute to JavaScript and working with Ruby on Rails as
           an API. On the side I like sharing my increasing knowledge as Software

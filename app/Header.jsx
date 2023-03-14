@@ -13,7 +13,7 @@ const Header = () => {
           <div>
             <div className='flex items-center justify-between py-3 md:py-5 md:block'>
               <a href='#'>
-                <h2 className='text-2xl text-white font-bold'>Andor</h2>
+                <h2 className='text-3xl text-white font-bold'>A L</h2>
               </a>
 
               <div className='relative'>
