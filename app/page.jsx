@@ -11,9 +11,11 @@ export default function Home() {
             </h1>
             <h1 className='py-4 text-gray-700'>A Full Stack Web Developer</h1>
             <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-              I'm a full stack web developer specializing on web development.
-              Currently, I'm focused on learning new technologies and building
-              web applications, while learning backend development as well.
+              I'm a full stack software engineer specializing on web
+              development. Currently, I'm focused on front end responsive UI and
+              creating intuitive UX for a web application and contribute to some
+              of the REST API. I also enjoy learning new technologies when ever
+              I can.
             </p>
             <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
               <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
