@@ -51,7 +51,7 @@ const skills = () => {
   ]
 
   return (
-    <section className='h-screen flex flex-col justify-center items-center pt-[80px] md:pt-[100px]'>
+    <section className='h-screen flex flex-col justify-center items-center pt-[50px] md:pt-[100px]'>
       <div className='text-gray-700 text-4xl md:text-5xl font-medium md:self-start md:ml-12 align'>
         What I can do
       </div>

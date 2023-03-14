@@ -34,9 +34,9 @@ const about = () => {
             deadlines and improve on operation efficiency. The rest of the time
             I enjoy being a husband, cook and traveler.
           </p>
-          <figcaption class='font-medium'>
-            <div class='text-sky-500 dark:text-sky-400'>Andor Lato</div>
-            <div class='text-slate-700 dark:text-slate-500'>
+          <figcaption className='font-medium'>
+            <div className='text-sky-500 dark:text-sky-400'>Andor Lato</div>
+            <div className='text-slate-700 dark:text-slate-500'>
               Full Stack Software Engineer
             </div>
           </figcaption>

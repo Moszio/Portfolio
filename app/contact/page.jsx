@@ -30,7 +30,7 @@ const contact = () => {
       )
   }
   return (
-    <section className='px-6 h-screen flex justify-center items-center pt-[500px] md:pt-0'>
+    <section className='px-6 h-screen flex justify-center items-center pt-[450px] md:pt-0'>
       <div className='text-gray-800 w-full'>
         <div className='flex flex-wrap md:px-auto justify-center '>
           <div className='w-fit grow-0 shrink-0 basis-auto mb-6 md:mb-0 md:w-2/4 px-3 lg:px-6'>

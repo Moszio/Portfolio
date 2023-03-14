@@ -43,11 +43,10 @@ const Card = ({ project }) => {
                 {project.technologies.map((technology, index) => {
                   const str = technology.slice(1, technology.indexOf('.'))
                   return (
-                    <div className='group relative'>
+                    <div className='group relative' key={index}>
                       <button
                         className='text-green-900 hover:text-green-700 p-1 sm:p-1 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300 hover:scale-110 ease-in duration-300 grayscale hover:grayscale-0 '
                         data-tooltip-target='tooltip-default'
-                        key={index}
                       >
                         <img
                           src={technology}
@@ -55,7 +54,7 @@ const Card = ({ project }) => {
                           alt='react-logo'
                         />
                       </button>
-                      <span class='absolute top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100'>
+                      <span className='absolute top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100'>
                         {str}
                       </span>
                     </div>
