@@ -41,17 +41,24 @@ const Card = ({ project }) => {
               </div>
               <div className='flex flex-wrap justify-center gap-2 sm:gap-4 mt-4'>
                 {project.technologies.map((technology, index) => {
+                  const str = technology.slice(1, technology.indexOf('.'))
                   return (
-                    <button
-                      className='text-green-900 hover:text-green-700 p-1 sm:p-1 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300 hover:scale-110 ease-in duration-300 grayscale hover:grayscale-0'
-                      key={index}
-                    >
-                      <img
-                        src={technology}
-                        className='w-5 h-5 fill-current'
-                        alt='react-logo'
-                      />
-                    </button>
+                    <div className='group relative'>
+                      <button
+                        className='text-green-900 hover:text-green-700 p-1 sm:p-1 inline-flex items-center dark:text-gray-400 dark:hover:text-gray-300 hover:scale-110 ease-in duration-300 grayscale hover:grayscale-0 '
+                        data-tooltip-target='tooltip-default'
+                        key={index}
+                      >
+                        <img
+                          src={technology}
+                          className='w-5 h-5 fill-current'
+                          alt='react-logo'
+                        />
+                      </button>
+                      <span class='absolute top-10 scale-0 rounded bg-gray-800 p-2 text-xs text-white group-hover:scale-100'>
+                        {str}
+                      </span>
+                    </div>
                   )
                 })}
               </div>

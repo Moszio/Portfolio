@@ -8,10 +8,10 @@ const Header = () => {
   const [navbar, setNavbar] = useState(false)
   return (
     <div className='z-10'>
-      <nav className='w-full bg-gray-800 shadow fixed z-20'>
+      <nav className='w-full bg-gray-800 shadow fixed z-20 '>
         <div className='justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>
           <div>
-            <div className='flex items-center justify-between py-3 md:py-5 md:block'>
+            <div className='flex items-center justify-between py-3 md:py-5 md:block ease-in duration-500'>
               <a href='#'>
                 <h2 className='text-3xl text-white font-bold'>A L</h2>
               </a>
@@ -72,7 +72,7 @@ const Header = () => {
                 navbar ? 'block' : 'hidden'
               }`}
             >
-              <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0'>
+              <ul className='items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 '>
                 <li className='text-white'>
                   <Link href='/'>Home</Link>
                 </li>
