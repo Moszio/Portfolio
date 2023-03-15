@@ -53,7 +53,7 @@ const contact = () => {
                 />
                 <div className='text-center text-gray-600'>
                   <p>Phone</p>
-                  <p>(202)-706-2003</p>
+                  <a href='tel:+1-202-706-2003'>(202)-706-2003</a>
                 </div>
               </div>
               <div className='block w-full h-36 md:w-48 gap-4 py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 '>
@@ -67,7 +67,7 @@ const contact = () => {
                 />
                 <div className='text-center text-gray-600'>
                   <p>Email</p>
-                  <p>latandor@gmail.com</p>
+                  <a href='mailto:latandor@gmail.com?'>latandor@gmail.com</a>
                 </div>
               </div>
               <div className='block w-full h-36 md:w-48 gap-4 py-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 '>

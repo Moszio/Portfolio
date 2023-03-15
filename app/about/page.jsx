@@ -21,7 +21,7 @@ const about = () => {
           <p>
             <span className='font-bold'>Hello!</span> I'm a full stack developer
             based in New York, NY, with the ability to contribute to JavaScript,
-            React.js, Nexrt.js and working with Ruby, Ruby on Rails to create
+            React.js, Next.js and working with Ruby, Ruby on Rails to create
             intuitive REST API. During my software engineer studies with
             Flatiron School, I gained experience coding under the direction of a
             team, collaborating on software projects, implementing design

@@ -12,9 +12,9 @@ const Header = () => {
         <div className='justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8'>
           <div>
             <div className='flex items-center justify-between py-3 md:py-5 md:block ease-in duration-500'>
-              <a href='#'>
+              <Link href='/'>
                 <h2 className='text-3xl text-white font-bold'>A L</h2>
-              </a>
+              </Link>
 
               <div className='relative'>
                 <div className='absolute -inset-1 bg-blue-600 rounded-lg blur md:hidden'></div>
